@@ -387,8 +387,8 @@ class Simulator:
         verbose = True):
 
     """ @brief  Samples vectors from L^* / Z^d perturbed by Gaussian noise of
-                standard deviation 1 / (sqrt(2) R), see [Regev23]. The vectors
-                sampled are discretized to {0, 1 / D, .., (D - 1) / D}^d.
+                standard deviation 1 / (2 sqrt(pi) R), see [Regev23]. The
+                vectors are discretized to {0, 1 / D, .., (D - 1) / D}^d.
 
         [Regev23]   Regev, O.: "An Efficient Quantum Factoring Algorithm".
                                 ArXiv 2308.06572v2 (2023).
@@ -508,7 +508,7 @@ class Simulator:
                     for _ in range(self.d)]);
       v = babai_cvp(self.B_dual, t, self.Bgs);
 
-      noise_dist = RealDistribution('gaussian', 1 / (sqrt(2) * self.R));
+      noise_dist = RealDistribution('gaussian', 1 / (2 * sqrt(pi) * self.R));
 
       # Sample the noise.
       noise = matrix(RealField(2 * self.D.nbits()), \
@@ -570,7 +570,7 @@ def solve_samples_for_factors(samples, N, d, R, verbose = True):
 
       @param R  A parameter that controls the level of noise in the vectors
                 sampled. More specifically, the vectors sampled are perturbed by
-                Gaussian noise of standard deviation 1 / (sqrt(2) R).
+                Gaussian noise of standard deviation 1 / (2 sqrt(pi) R).
 
       @param verbose  A flag that may be set to True to print verbose status
                       messages, or to False not to print such messages.
@@ -676,7 +676,7 @@ def solve_samples_for_factors_exhaust(samples, c, N, d, R, verbose = True):
 
       @param R  A parameter that controls the level of noise in the vectors
                 sampled. More specifically, the vectors sampled are perturbed by
-                Gaussian noise of standard deviation 1 / (sqrt(2) R).
+                Gaussian noise of standard deviation 1 / (2 sqrt(pi) R).
 
       @param verbose  A flag that may be set to True to print verbose status
                       messages, or to False not to print such messages.
