@@ -197,7 +197,9 @@ def build_a_b_vectors(d):
   """ @brief  Builds the a = (a_1, .., a_d) and b = (b_1, .., b_d) vectors,
               where b_1, .., b_d are the first d primes, and a_i = b_i^2.
 
-      @param d  The dimension d of the vectors to build. """
+      @param d  The dimension d of the vectors to build.
+
+      @return   [a, b] for a and b the vector built. """
 
   # Set b = [b_1, .., b_d] to the first d primes.
   b = [];
@@ -541,7 +543,9 @@ class Simulator:
 
   def __repr__(self):
 
-    """ @brief  Represents the simulator as a string. """
+    """ @brief  Represents the simulator as a string.
+
+        @return   A string representation of the simulator. """
 
     return "Simulator for N = " + str(self.N) + " with C = " + str(self.C);
 
