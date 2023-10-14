@@ -199,7 +199,7 @@ def build_a_b_vectors(d):
 
       @param d  The dimension d of the vectors to build.
 
-      @return   [a, b] for a and b the vector built. """
+      @return   [a, b] for a and b the vectors built. """
 
   # Set b = [b_1, .., b_d] to the first d primes.
   b = [];
