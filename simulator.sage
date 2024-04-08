@@ -607,6 +607,7 @@ def solve_samples_for_factors(samples, N, d, R, verbose = True):
 
   LB = X[:d, :d].transpose();
 
+  # Build the a and b vectors.
   [a, b] = build_a_b_vectors(d);
 
   # Setup the ring of integers modulo N.
@@ -616,6 +617,7 @@ def solve_samples_for_factors(samples, N, d, R, verbose = True):
     print("");
     print(" Processing the factoring relations found...");
 
+  # Setup the factor collection.
   factors = FactorCollection(N);
 
   for v in LB.transpose():
