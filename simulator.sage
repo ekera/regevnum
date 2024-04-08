@@ -714,7 +714,7 @@ def solve_samples_for_factors_exhaust(samples, c, N, d, R, verbose = True):
 def test(m = 2, l = 512, verbose = True):
 
   """ @brief  A convenience function for testing the simulator for the quantum
-              algorithm in [Regev23] and the classical post-processing.
+              algorithm and classical post-processing in [Regev23].
 
       [Regev23]   Regev, O.: "An Efficient Quantum Factoring Algorithm".
                               ArXiv 2308.06572v2 (2023).
@@ -722,7 +722,7 @@ def test(m = 2, l = 512, verbose = True):
       This function first picks an integer N with m distinct l-bit prime factors
       (on special form, so as to enable efficient simulation).
 
-      It then sets up the simulator, uses the simulator to sample vectors
+      It then sets up the simulator, and uses the simulator to sample vectors
       representative of vectors that the quantum computer would output according
       to Regev's analysis of the quantum algorithm in [Regev23].
 
