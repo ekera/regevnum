@@ -605,7 +605,7 @@ def solve_samples_for_factors(samples, N, d, R, verbose = True):
   if X.row_space() != M.transpose().row_space():
     raise Exception("Error: Failed to run LLL (3).");
 
-  LB = X[:d, :d].transpose();
+  LB = X[:d, :d];
 
   # Build the a and b vectors.
   [a, b] = build_a_b_vectors(d);
@@ -620,7 +620,7 @@ def solve_samples_for_factors(samples, N, d, R, verbose = True):
   # Setup the factor collection.
   factors = FactorCollection(N);
 
-  for v in LB.transpose():
+  for v in LB:
     A = prod([R(a[i])^v[i] for i in range(d)]);
     B = prod([R(b[i])^v[i] for i in range(d)]);
 
