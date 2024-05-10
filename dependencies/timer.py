@@ -1,6 +1,10 @@
+# ------------------------------------------------------------------------------
 # Note: This file was copied from the factoritall repository by M. Ekerå.
 #
 # For further details, please see: https://github.com/ekera/factoritall
+#
+# Reference to other files and documentation below pertain to the above GitHub
+# repository; not to the regevnum GitHub repository.
 
 from time import time;
 from math import floor;

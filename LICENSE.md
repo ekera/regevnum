@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2023 Martin Ekerå and Joel Gärtner
+Copyright (c) 2023–2024 Martin Ekerå and Joel Gärtner
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
