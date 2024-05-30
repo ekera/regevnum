@@ -15,10 +15,10 @@ Note that imposing the above requirements makes the problem instance classically
 The simulator can hence not be used to break classically hard problem instances.
 This having been said, we expect its performance (in terms for the success probability of the post-processing for a given problem instance size and set of parameters) to be representative of that for Regev's algorithm, and of Ekerå–Gärtner's extensions thereof, also for classically hard problem instances.
 
-For factoring, the simulator is sufficiently efficient to simulate Regev's algorithm, and our extensions of it to factoring via order-finding, for 2048-bit RSA integers.
+For factoring, the simulator is sufficiently efficient to simulate Regev's algorithm, and our extensions of it to factoring via order finding, for 2048-bit RSA integers.
 For discrete logarithms, the simulator is sufficiently efficient to simulate computing discrete logarithms in safe-prime groups and Schnorr groups, as used in Diffie–Hellman and DSA, with 2048-bit moduli.
 
-The high-level functionality for factoring, logarithm finding, and order finding (including factoring via order-finding), respectively, is implemented in the scripts
+The high-level functionality for factoring, logarithm finding, and order finding (including factoring via order finding), respectively, is implemented in the scripts
 - [<code>factoring.sage</code>](factoring.sage),
 - [<code>logarithm-finding.sage</code>](logarithm-finding.sage), and
 - [<code>order-finding.sage</code>](order-finding.sage).
