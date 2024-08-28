@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you cite this software, please cite it as below."
+authors:
+- family-names: "Ekerå"
+  given-names: "Martin"
+  orcid: "https://orcid.org/0000-0002-7061-2374"
+- family-names: "Gärtner"
+  given-names: "Joel"
+  orcid: "https://orcid.org/0000-0002-3724-2914"
+title: "Simulating Regev's quantum factoring algorithm and Ekerå–Gärtner's extensions to discrete logarithm finding, order finding and factoring via order finding"
+version: 1.0.0
+date-released: 2024-05-10
+url: "https://github.com/ekera/regevnum"
