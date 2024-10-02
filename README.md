@@ -3,7 +3,7 @@ The repository contains [Sage](https://www.sagemath.org) scripts that implement 
 The scripts furthermore implement the lattice-based post-processing algorithms from the aforementioned works.
 
 The simulator works by constructing a basis for the lattice for the problem instance to be simulated.
-For the simulator to be able to construct such a basis, it requires the modulus defines the problem instance to be on special form.
+For the simulator to be able to construct such a basis, it requires the modulus that defines the problem instance to be on special form.
 More specifically,
 - when the modulus is a prime $p$, the simulator requires $p - 1$ to be smooth, and
 - when the modulus is a composite $`N = {\prod}_{i=1}^t \, p_i`$, for the $p_i$ distinct prime factors, the simulator requires each $p_i - 1$ to be smooth and to not share any factor with $p_j - 1$ for $j \neq i$ except for a factor of two.
